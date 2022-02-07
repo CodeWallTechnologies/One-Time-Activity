@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#388e3c"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Activity" />
+
+    <Button
+        android:id="@+id/btn_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Third Activity" />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Activity" />
+
+    <Button
+        android:id="@+id/btn_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fourth Activity" />
+
+    <Button
+        android:id="@+id/btn_exo_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exo Player" />
+    <Button
+        android:id="@+id/btn_cheat_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Short Cut" />
+
+
+</LinearLayout>
