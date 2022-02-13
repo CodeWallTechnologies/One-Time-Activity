@@ -72,7 +72,7 @@ public class Second extends AppCompatActivity {
         // on below line we are creating a retrofit
         // builder and passing our base url
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://picsum.photos/")
+                .baseUrl("https://codewalltechnologies.com/")
                 // on below line we are calling add Converter
                 // factory as GSON converter factory.
                 .addConverterFactory(ScalarsConverterFactory.create())
@@ -97,14 +97,13 @@ public class Second extends AppCompatActivity {
                 }
             }
 
+            //http://codewalltechnologies.com/
+
             @Override
             public void onFailure(Call<String> call, Throwable t) {
                 progressDialog.dismiss();
-                Toast.makeText(Second.this, "Fail to get the data..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Second.this, ""+t, Toast.LENGTH_SHORT).show();
             }
-
-
-
 
         });
     }
@@ -115,8 +114,8 @@ public class Second extends AppCompatActivity {
             try {
                 JSONObject jsonObject  = jsonArray.getJSONObject(i);
                 Model3 data =  new Model3();
-                data.setImage(jsonObject.getString("download_url"));
-                data.setName(jsonObject.getString("author"));
+                data.setImage(jsonObject.getString("image_url"));
+                data.setName(jsonObject.getString("title"));
                 model3s.add(data);
             } catch (JSONException e) {
                 e.printStackTrace();

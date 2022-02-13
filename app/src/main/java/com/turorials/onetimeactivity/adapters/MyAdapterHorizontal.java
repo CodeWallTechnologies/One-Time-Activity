@@ -16,7 +16,7 @@ import com.turorials.onetimeactivity.AboutAs;
 import com.turorials.onetimeactivity.First;
 import com.turorials.onetimeactivity.Logout;
 import com.turorials.onetimeactivity.R;
-import com.turorials.onetimeactivity.ShortCut;
+import com.turorials.onetimeactivity.ShortCutActivity;
 import com.turorials.onetimeactivity.model.HorizontalNavigationItemModel;
 
 import java.util.ArrayList;
@@ -56,7 +56,7 @@ public class MyAdapterHorizontal extends RecyclerView.Adapter<MyAdapterHorizonta
                     Intent intent;
                   switch (position){
                       case 2:
-                          intent = new Intent(context, ShortCut.class);
+                          intent = new Intent(context, ShortCutActivity.class);
                           break;
                       case 5:
                           intent = new Intent(context, AboutAs.class);

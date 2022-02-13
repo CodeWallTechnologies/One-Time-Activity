@@ -47,6 +47,8 @@ public class MyAdapterHtml extends RecyclerView.Adapter<MyAdapterHtml.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolderHtml holder, int position) {
 
+
+        holder.textView.setText(arrayList.get(position).getName());
                    Glide
                 .with(activity)
                 .load(arrayList.get(position).getImage())

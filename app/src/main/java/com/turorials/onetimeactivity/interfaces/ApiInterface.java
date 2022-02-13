@@ -8,7 +8,8 @@ import retrofit2.http.GET;
 public interface ApiInterface {
 
 
-    @GET("v2/list")
+//    @GET("v2/list")
+    @GET("api/firsts")
     Call<String>  STRING_CALL();
 
 

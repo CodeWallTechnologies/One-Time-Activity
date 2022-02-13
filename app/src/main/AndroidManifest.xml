@@ -12,13 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneTimeActivity">
         <activity
+            android:name=".ShortCutImagesActivity"
+            android:exported="false" />
+        <activity
             android:name=".Logout"
             android:exported="false" />
         <activity
             android:name=".AboutAs"
             android:exported="false" />
         <activity
-            android:name=".ShortCut"
+            android:name=".ShortCutActivity"
             android:exported="false" />
         <activity
             android:name=".ExoPlayer"

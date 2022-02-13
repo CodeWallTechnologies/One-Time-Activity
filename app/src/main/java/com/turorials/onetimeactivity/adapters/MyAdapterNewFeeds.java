@@ -39,7 +39,7 @@ public class MyAdapterNewFeeds extends RecyclerView.Adapter<MyAdapterNewFeeds.My
     MyAdapterNewFeedsNested myAdapterNewFeedsNested;
     ArrayList<NewFeedModel> newFeedModels;
     Activity activity;
-    ArrayList<ImageModel> imageModelArrayList;
+
     NewFeedModel obj;
 
 
