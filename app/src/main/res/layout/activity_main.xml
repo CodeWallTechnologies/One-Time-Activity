@@ -8,17 +8,8 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_second"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Second Activity" />
 
-    <Button
-        android:id="@+id/btn_third"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Third Activity" />
+
 
     <Button
         android:id="@+id/btn_first"
@@ -26,22 +17,9 @@
         android:layout_height="wrap_content"
         android:text="First Activity" />
 
-    <Button
-        android:id="@+id/btn_fourth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fourth Activity" />
 
-    <Button
-        android:id="@+id/btn_exo_player"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Exo Player" />
-    <Button
-        android:id="@+id/btn_cheat_sheet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Short Cut" />
+
+
 
 
 </LinearLayout>

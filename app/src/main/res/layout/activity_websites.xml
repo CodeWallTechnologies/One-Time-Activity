@@ -5,17 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Third">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_one"
-        tools:listitem="@layout/testing_list_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+    android:background="#17181A"
+    tools:context=".WebsiteActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_three"
-        tools:listitem="@layout/testing_list_item2"
+        tools:listitem="@layout/website_items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />

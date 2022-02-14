@@ -12,11 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.turorials.onetimeactivity.AboutAs;
+import com.turorials.onetimeactivity.AboutAsActivity;
 import com.turorials.onetimeactivity.First;
 import com.turorials.onetimeactivity.Logout;
 import com.turorials.onetimeactivity.R;
+import com.turorials.onetimeactivity.Second;
 import com.turorials.onetimeactivity.ShortCutActivity;
+import com.turorials.onetimeactivity.WebsiteActivity;
 import com.turorials.onetimeactivity.model.HorizontalNavigationItemModel;
 
 import java.util.ArrayList;
@@ -55,11 +57,17 @@ public class MyAdapterHorizontal extends RecyclerView.Adapter<MyAdapterHorizonta
                 public void onClick(View v) {
                     Intent intent;
                   switch (position){
+                      case 1:
+                          intent = new Intent(context, Second.class);
+                          break;
                       case 2:
                           intent = new Intent(context, ShortCutActivity.class);
                           break;
+                      case 3:
+                          intent = new Intent(context, WebsiteActivity.class);
+                          break;
                       case 5:
-                          intent = new Intent(context, AboutAs.class);
+                          intent = new Intent(context, AboutAsActivity.class);
                           break;
                       case 6:
                           intent = new Intent(context,Logout.class);

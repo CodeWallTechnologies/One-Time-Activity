@@ -45,7 +45,7 @@ app:layout_constraintTop_toTopOf="parent">
 
 
     <Button
-        android:id="@+id/btn_done"
+        android:id="@+id/btn_about_website"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#273951"

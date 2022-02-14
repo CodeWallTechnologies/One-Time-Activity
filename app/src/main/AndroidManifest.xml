@@ -12,13 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneTimeActivity">
         <activity
+            android:name=".WebsiteMainPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShortCutImagesActivity"
             android:exported="false" />
         <activity
             android:name=".Logout"
             android:exported="false" />
         <activity
-            android:name=".AboutAs"
+            android:name=".AboutAsActivity"
             android:exported="false" />
         <activity
             android:name=".ShortCutActivity"
@@ -27,13 +30,10 @@
             android:name=".ExoPlayer"
             android:exported="false" />
         <activity
-            android:name=".Fourth"
-            android:exported="false" />
-        <activity
             android:name=".First"
             android:exported="false" />
         <activity
-            android:name=".Third"
+            android:name=".WebsiteActivity"
             android:exported="false" />
         <activity
             android:name=".Second"

@@ -2,6 +2,7 @@ package com.turorials.onetimeactivity.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.turorials.onetimeactivity.ExoPlayer;
 import com.turorials.onetimeactivity.R;
 import com.turorials.onetimeactivity.model.ImageModel;
 import com.turorials.onetimeactivity.model.NewFeedModel;
@@ -60,6 +62,13 @@ public class MyAdapterNewFeedsNested extends RecyclerView.Adapter<MyAdapterNewFe
                    .placeholder(R.drawable.background)
                    .into(holder.imageView);
 
+           holder.imageView.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   Intent intent = new Intent(context, ExoPlayer.class);
+                   context.startActivity(intent);
+               }
+           });
 
 
 

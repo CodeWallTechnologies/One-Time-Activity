@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,7 +15,6 @@ import com.bumptech.glide.Glide;
 import com.turorials.onetimeactivity.R;
 import com.turorials.onetimeactivity.model.Model3;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MyAdapterHtml extends RecyclerView.Adapter<MyAdapterHtml.MyViewHolderHtml> {
@@ -69,7 +67,7 @@ public class MyAdapterHtml extends RecyclerView.Adapter<MyAdapterHtml.MyViewHold
 
         public MyViewHolderHtml(@NonNull View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.textView);
+            textView = itemView.findViewById(R.id.website_title);
             imageView = itemView.findViewById(R.id.imageView12);
 
         }

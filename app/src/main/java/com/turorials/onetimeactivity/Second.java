@@ -6,12 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.turorials.onetimeactivity.adapters.MyAdapter;
 import com.turorials.onetimeactivity.adapters.MyAdapterHtml;
 import com.turorials.onetimeactivity.interfaces.ApiInterface;
 import com.turorials.onetimeactivity.model.Model3;

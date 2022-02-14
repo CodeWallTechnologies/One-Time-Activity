@@ -54,7 +54,7 @@ public class First extends AppCompatActivity {
         HorizontalNavigationItemModel model2 = new HorizontalNavigationItemModel("free courses");
         HorizontalNavigationItemModel model3 = new HorizontalNavigationItemModel("cheat sheets");
         HorizontalNavigationItemModel model4 = new HorizontalNavigationItemModel("websites");
-        HorizontalNavigationItemModel model5 = new HorizontalNavigationItemModel("youtube channels");
+        HorizontalNavigationItemModel model5 = new HorizontalNavigationItemModel("Daily Blogs");
         HorizontalNavigationItemModel model6 = new HorizontalNavigationItemModel("about as");
         HorizontalNavigationItemModel model7 = new HorizontalNavigationItemModel("logout");
 
