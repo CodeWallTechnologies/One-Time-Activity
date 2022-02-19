@@ -1,11 +1,18 @@
-package com.turorials.onetimeactivity;
+package com.turorials.onetimeactivity.fragment;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
+import com.turorials.onetimeactivity.R;
 import com.turorials.onetimeactivity.adapters.MyAdapterNewFeeds;
 import com.turorials.onetimeactivity.adapters.MyAdapterShortCut;
 import com.turorials.onetimeactivity.model.Images;
@@ -13,19 +20,17 @@ import com.turorials.onetimeactivity.model.ShortCutModel;
 
 import java.util.ArrayList;
 
-public class ShortCutActivity extends AppCompatActivity {
+public class CheatSheetFragment extends Fragment {
 
     RecyclerView rv_short_cut;
     MyAdapterShortCut myAdapterShortCut;
     ArrayList<ShortCutModel> shortCutModelArrayList;
 
-
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_short_cut);
-
-        rv_short_cut = findViewById(R.id.rv_short_cut);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_short_cut,container,false);
+        rv_short_cut = view.findViewById(R.id.rv_short_cut);
 
 
         //Images imagesArrayList = new Images[]{new Images(),new Images(),new Images()}
@@ -87,18 +92,20 @@ public class ShortCutActivity extends AppCompatActivity {
 //        ShortCutModel shortCutModel5 = new ShortCutModel();
 
 
-         shortCutModelArrayList = new ArrayList<>();
+        shortCutModelArrayList = new ArrayList<>();
         shortCutModelArrayList.add(shortCutModel1);
         shortCutModelArrayList.add(shortCutModel2);
         shortCutModelArrayList.add(shortCutModel3);
 //        shortCutModelArrayList.add(shortCutModel4);
 //        shortCutModelArrayList.add(shortCutModel5);
 
-        LinearLayoutManager linearLayoutManagerNewFeed = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
+        LinearLayoutManager linearLayoutManagerNewFeed = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
         rv_short_cut.setLayoutManager(linearLayoutManagerNewFeed);
-        myAdapterShortCut = new MyAdapterShortCut(shortCutModelArrayList,this);
+        myAdapterShortCut = new MyAdapterShortCut(shortCutModelArrayList,getContext());
         rv_short_cut.setAdapter(myAdapterShortCut);
         rv_short_cut.setHasFixedSize(true);
-
+        return view;
     }
+
+
 }

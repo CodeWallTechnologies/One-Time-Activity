@@ -1,4 +1,4 @@
-package com.turorials.onetimeactivity;
+package com.turorials.onetimeactivity.fragment;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import com.turorials.onetimeactivity.R;
 import com.turorials.onetimeactivity.adapters.MyAdapterNewFeeds;
 import com.turorials.onetimeactivity.model.ImageModel;
 import com.turorials.onetimeactivity.model.NewFeedModel;

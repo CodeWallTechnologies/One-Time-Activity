@@ -9,4 +9,28 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="main_color1">#242527</color>
+
+
+    <!-- dots inactive color   -->
+    <color name="dart_one">#dcdcdc</color>
+    <color name="dart_two">#dcdcdc</color>
+    <color name="dart_three">#dcdcdc</color>
+
+    <!-- dots active color   -->
+    <color name="orange_one">#e65252</color>
+    <color name="orange_two">#e65252</color>
+    <color name="orange_three">#e65252</color>
+
+
+    <array name="inactive">
+        <item>@color/dart_one</item>
+        <item>@color/dart_two</item>
+        <item>@color/dart_three</item>
+    </array>
+
+    <array name="active">
+        <item>@color/orange_one</item>
+        <item>@color/orange_two</item>
+        <item>@color/orange_three</item>
+    </array>
 </resources>

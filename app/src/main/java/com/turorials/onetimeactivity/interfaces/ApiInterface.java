@@ -1,7 +1,5 @@
 package com.turorials.onetimeactivity.interfaces;
 
-import com.turorials.onetimeactivity.model.Model3;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
 
@@ -9,12 +7,14 @@ public interface ApiInterface {
 
 
 //    @GET("v2/list")
-    @GET("api/firsts")
+    @GET("api/blogs")
     Call<String>  STRING_CALL();
 
 
-    @GET("users")
+    @GET("api/websites")
     Call<String> STRING_CALL1();
+
+
 
 
 

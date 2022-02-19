@@ -12,6 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneTimeActivity">
         <activity
+            android:name=".fragment.Online_Class_Fragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.ExtraInfoPagerFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.BlogPagerFragment"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".BlogViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".WebsiteMainPageActivity"
             android:exported="false" />
         <activity
@@ -24,29 +51,27 @@
             android:name=".AboutAsActivity"
             android:exported="false" />
         <activity
-            android:name=".ShortCutActivity"
+            android:name=".fragment.CheatSheetFragment"
             android:exported="false" />
         <activity
-            android:name=".ExoPlayer"
+            android:name=".WatchLessonActivity"
             android:exported="false" />
         <activity
-            android:name=".First"
+            android:name=".fragment.CodeWallLessonsPageFragment"
             android:exported="false" />
         <activity
-            android:name=".WebsiteActivity"
+            android:name=".fragment.OriginalWebsitesFragment"
             android:exported="false" />
         <activity
-            android:name=".Second"
+            android:name=".fragment.DailyBlogFragment"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -39,6 +40,9 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer:2.16.1'
     implementation 'com.google.android.exoplayer:exoplayer-core:2.16.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.0'
 
 
     testImplementation 'junit:junit:4.+'
@@ -53,6 +57,7 @@ dependencies {
 
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 
 
 

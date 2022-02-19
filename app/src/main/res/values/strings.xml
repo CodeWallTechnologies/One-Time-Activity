@@ -2,4 +2,5 @@
     <string name="app_name">OneTimeActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_client_id">352285872232-mgvn958a1kdqighoi9mbq25socgonctk.apps.googleusercontent.com</string>
 </resources>

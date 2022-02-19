@@ -41,13 +41,10 @@ public class MyAdapterShortCut extends RecyclerView.Adapter<MyAdapterShortCut.My
         ShortCutModel positionObj = arrayList.get(position);
         holder.textView.setText(positionObj.getTitle());
         holder.imageView.setImageResource(positionObj.getImgResource());
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, ShortCutImagesActivity.class);
-                intent.putExtra("image",positionObj.getImg());
-               context.startActivity(intent);
-            }
+        holder.imageView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ShortCutImagesActivity.class);
+            intent.putExtra("image",positionObj.getImg());
+           context.startActivity(intent);
         });
     }
 

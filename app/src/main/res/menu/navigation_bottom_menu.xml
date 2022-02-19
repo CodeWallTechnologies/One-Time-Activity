@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/lessons"
+        android:icon="@drawable/ic_online_class"
+        android:title="Online Classes" />
+    <item
+        android:id="@+id/blogs"
+        android:icon="@drawable/ic_blogs"
+        android:title="Blogs" />
+    <item
+        android:id="@+id/tips"
+        android:icon="@drawable/ic_tips"
+        android:title="Tips" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_menu"
+        android:title="More" />
+</menu>

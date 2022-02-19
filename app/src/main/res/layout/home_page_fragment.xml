@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".First">
+    tools:context=".fragment.CodeWallLessonsPageFragment">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -72,23 +72,9 @@
 
 
 
-
                 <androidx.recyclerview.widget.RecyclerView
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/rv_horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#242527"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    tools:itemCount="2"
-                    tools:listitem="@layout/horizontal_navigation_itmes" />
-
-
-
-                <androidx.recyclerview.widget.RecyclerView
+                    android:padding="10dp"
                     android:id="@+id/rv_new_feed"
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/black"

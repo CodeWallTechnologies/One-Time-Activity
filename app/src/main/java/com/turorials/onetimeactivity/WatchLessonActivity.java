@@ -12,7 +12,7 @@ import com.google.android.exoplayer2.ui.PlayerView;
 
 import java.util.SimpleTimeZone;
 
-public class ExoPlayer extends AppCompatActivity {
+public class WatchLessonActivity extends AppCompatActivity {
 
     PlayerView player;
 

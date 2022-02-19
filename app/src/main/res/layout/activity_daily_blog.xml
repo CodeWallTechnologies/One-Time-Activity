@@ -6,13 +6,20 @@
     android:layout_height="match_parent"
     android:background="#17181A"
     android:orientation="vertical"
-    tools:context=".Second">
+    tools:context=".fragment.DailyBlogFragment">
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="5dp"
         android:layout_marginEnd="1dp"
+
         tools:listitem="@layout/html_itmes" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>

@@ -3,7 +3,11 @@ package com.turorials.onetimeactivity.interfaces;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface MainInterface {
-    @GET("b/7IQ2")
-    Call<String> IMAGE_CALL();
+public interface ApiSecondInterface {
+
+    @GET("api/classes")
+    Call<String> STRING_CALL3();
+
+
+
 }
