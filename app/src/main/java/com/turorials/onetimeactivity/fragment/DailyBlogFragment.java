@@ -46,6 +46,8 @@ public class DailyBlogFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_daily_blog,container,false);
+
+
         recyclerView = view.findViewById(R.id.rv_two);
         swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_layout);
         swipeRefreshLayout.setOnRefreshListener(() -> {
@@ -63,7 +65,7 @@ public class DailyBlogFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
 
 
-        getData();
+       getData();
 
         return view;
     }
@@ -71,17 +73,9 @@ public class DailyBlogFragment extends Fragment {
 
 
 
-    public void getData() {
-
-        ProgressDialog progressDialog = new ProgressDialog(view.getContext());
-        progressDialog.setMessage("Please wait..");
-        progressDialog.setCancelable(false);
-        progressDialog.show();
+    private void getData() {
 
 
-
-        // on below line we are creating a retrofit
-        // builder and passing our base url
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://codewalltechnologies.com/")
                 // on below line we are calling add Converter
@@ -96,8 +90,8 @@ public class DailyBlogFragment extends Fragment {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 if (response.isSuccessful() ) {
-                    progressDialog.dismiss();
-                    Toast.makeText(view.getContext(), "json data", Toast.LENGTH_SHORT).show();
+
+
                     try {
                         JSONArray jsonArray = new JSONArray(response.body());
 
@@ -108,12 +102,11 @@ public class DailyBlogFragment extends Fragment {
                 }
             }
 
-            //http://codewalltechnologies.com/
+
 
             @Override
             public void onFailure(Call<String> call, Throwable t) {
-                progressDialog.dismiss();
-                // Toast.makeText(DailyBlogFragment.this, ""+t, Toast.LENGTH_SHORT).show();
+
             }
 
         });

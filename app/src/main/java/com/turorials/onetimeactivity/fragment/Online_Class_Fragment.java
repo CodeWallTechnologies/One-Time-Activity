@@ -43,17 +43,7 @@ public class Online_Class_Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
          view = inflater.inflate(R.layout.activity_online_class,container,false);
-//        OnlineClassModel onlineClass1 = new OnlineClassModel();
-//        onlineClass1.setImgOnlineClass(R.drawable.java_classes);
-//
-//        OnlineClassModel onlineClass2 = new OnlineClassModel();
-//        onlineClass2.setImgOnlineClass(R.drawable.android_classes);
 
-
-
-//        List<OnlineClassModel> list = new ArrayList<>();
-//        list.add(onlineClass1);
-//        list.add(onlineClass2);
 
         recyclerView = view.findViewById(R.id.rv_online_classes);
         MyAdapterOnlineClasses myAdapterOnlineClasses = new MyAdapterOnlineClasses(view.getContext(), list);
@@ -67,16 +57,6 @@ public class Online_Class_Fragment extends Fragment {
     }
 
     public void getData() {
-
-        ProgressDialog progressDialog = new ProgressDialog(view.getContext());
-        progressDialog.setMessage("Please wait..");
-        progressDialog.setCancelable(false);
-        progressDialog.show();
-
-
-
-        // on below line we are creating a retrofit
-        // builder and passing our base url
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://codewalltechnologies.com/")
                 // on below line we are calling add Converter
@@ -91,8 +71,6 @@ public class Online_Class_Fragment extends Fragment {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 if (response.isSuccessful() ) {
-                    progressDialog.dismiss();
-                    Toast.makeText(view.getContext(), "json data", Toast.LENGTH_SHORT).show();
                     try {
                         JSONArray jsonArray = new JSONArray(response.body());
 
@@ -103,12 +81,10 @@ public class Online_Class_Fragment extends Fragment {
                 }
             }
 
-            //http://codewalltechnologies.com/
 
             @Override
             public void onFailure(Call<String> call, Throwable t) {
-                progressDialog.dismiss();
-                // Toast.makeText(DailyBlogFragment.this, ""+t, Toast.LENGTH_SHORT).show();
+
             }
 
         });
@@ -125,10 +101,7 @@ public class Online_Class_Fragment extends Fragment {
 
                 data.setImgOnlineClass(jsonObject.getString("image_url"));
                 data.setCourseDetails(jsonObject.getString("course_url"));
-//                data.setImage(jsonObject.getString("image_url"));
-//                data.setName(jsonObject.getString("title"));
-//                data.setBlog_url(jsonObject.getString("blog_url"));
-//                data.setTime(jsonObject.getString("time"));
+
                 list.add(data);
             } catch (JSONException e) {
                 e.printStackTrace();

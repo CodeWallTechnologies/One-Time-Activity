@@ -51,6 +51,9 @@ public class MainActivity2 extends AppCompatActivity {
                    case 3:
                        navigationView.getMenu().findItem(R.id.tips).setChecked(true);
                        break;
+                   case 4:
+                       navigationView.getMenu().findItem(R.id.more).setChecked(true);
+                       break;
 
                }
            }
@@ -77,6 +80,9 @@ public class MainActivity2 extends AppCompatActivity {
                         break;
                     case  R.id.tips:
                         viewPagerMain.setCurrentItem(3);
+                        break;
+                    case  R.id.more:
+                        viewPagerMain.setCurrentItem(4);
                         break;
 
                 }

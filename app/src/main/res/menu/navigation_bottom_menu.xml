@@ -17,7 +17,7 @@
         android:icon="@drawable/ic_tips"
         android:title="Tips" />
     <item
-        android:id="@+id/settings"
+        android:id="@+id/more"
         android:icon="@drawable/ic_menu"
         android:title="More" />
 </menu>

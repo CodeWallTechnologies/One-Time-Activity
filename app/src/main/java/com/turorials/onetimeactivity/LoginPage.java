@@ -2,8 +2,10 @@ package com.turorials.onetimeactivity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -55,12 +57,33 @@ public class LoginPage extends AppCompatActivity {
         }
     }
 
+//
+//    gradient 1:
+//    color 1 : #B01E94
+//    color 2 : #3B006F
+//
+//    gradient 2:
+//    color 1 : #F1696A
+//    color 2 : #EC1186
+//
+//    gradient 3:
+//    color 1 :	#74048D
+//    color 2 :	#E3127B
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
+
+        getSupportActionBar().hide();
+
+        ConstraintLayout constraintLayout = findViewById(R.id.login_page_layout);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.start();
 
         button = findViewById(R.id.Google);
         mAuth = FirebaseAuth.getInstance();

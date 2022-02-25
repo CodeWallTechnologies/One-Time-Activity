@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import com.turorials.onetimeactivity.UserProfile;
 import com.turorials.onetimeactivity.fragment.CodeWallLessonsPageFragment;
 import com.turorials.onetimeactivity.fragment.BlogPagerFragment;
 import com.turorials.onetimeactivity.fragment.Online_Class_Fragment;
@@ -28,6 +29,8 @@ public class ViewPagerAdapterMain extends FragmentStatePagerAdapter {
                 return new BlogPagerFragment();
             case 3:
                 return new ExtraInfoPagerFragment();
+            case 4:
+                return new UserProfile();
             case 0:
             default:
                return new CodeWallLessonsPageFragment();
@@ -37,6 +40,6 @@ public class ViewPagerAdapterMain extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 }

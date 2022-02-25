@@ -2,6 +2,7 @@ package com.turorials.onetimeactivity.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,18 +12,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
 import com.turorials.onetimeactivity.R;
 import com.turorials.onetimeactivity.ShortCutImagesActivity;
 import com.turorials.onetimeactivity.model.ShortCutModel;
+import java.util.List;
 
-import java.util.ArrayList;
+public class MyAdapterCheatSheet extends RecyclerView.Adapter<MyAdapterCheatSheet.MyViewHolderShortCut> {
 
-public class MyAdapterShortCut extends RecyclerView.Adapter<MyAdapterShortCut.MyViewHolderShortCut> {
-
-    ArrayList<ShortCutModel> arrayList;
+    List<ShortCutModel> arrayList;
     Context context;
-
-    public MyAdapterShortCut(ArrayList<ShortCutModel> arrayList, Context context) {
+    ShortCutImagesActivity shortCutImagesActivity;
+    public MyAdapterCheatSheet(List<ShortCutModel> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
@@ -40,11 +42,21 @@ public class MyAdapterShortCut extends RecyclerView.Adapter<MyAdapterShortCut.My
     public void onBindViewHolder(@NonNull MyViewHolderShortCut holder, int position) {
         ShortCutModel positionObj = arrayList.get(position);
         holder.textView.setText(positionObj.getTitle());
-        holder.imageView.setImageResource(positionObj.getImgResource());
+
+        Glide
+                .with(context)
+                .load(arrayList.get(position).getImage_url())
+                .placeholder(R.drawable.background)
+                .into(holder.imageView);
+
         holder.imageView.setOnClickListener(v -> {
             Intent intent = new Intent(context, ShortCutImagesActivity.class);
-            intent.putExtra("image",positionObj.getImg());
-           context.startActivity(intent);
+            String arrayAsString = new Gson().toJson(positionObj.getChildImagesModelList()   );
+            intent.putExtra("images",arrayAsString);
+
+//
+            Log.d("Images", arrayAsString+"");
+            context.startActivity(intent);
         });
     }
 
@@ -56,13 +68,11 @@ public class MyAdapterShortCut extends RecyclerView.Adapter<MyAdapterShortCut.My
     class MyViewHolderShortCut extends RecyclerView.ViewHolder{
         TextView textView;
         ImageView imageView;
-//        Button btn_view_images;
 
         public MyViewHolderShortCut(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.tv_short_cut_title);
             imageView = itemView.findViewById(R.id.img_short_cut);
-//            btn_view_images = itemView.findViewById(R.id.btn_view_images);
 
         }
     }

@@ -3,6 +3,7 @@ package com.turorials.onetimeactivity.adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,28 +13,26 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.turorials.onetimeactivity.Logout;
 import com.turorials.onetimeactivity.R;
-import com.turorials.onetimeactivity.model.ImageModel;
-import com.turorials.onetimeactivity.model.NewFeedModel;
+import com.turorials.onetimeactivity.VideoView;
+import com.turorials.onetimeactivity.model.ChildLessonModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
 public class MyAdapterNewFeedsNested extends RecyclerView.Adapter<MyAdapterNewFeedsNested.MyViewHolderNewFeedNested> {
 
     Context context;
-    ArrayList<NewFeedModel> newFeedModels;
     Activity activity;
-    List<ImageModel> imageModelList;
+    List<ChildLessonModel> childLessonModelList;
 
-    public MyAdapterNewFeedsNested(Context context, ArrayList<NewFeedModel> newFeedModels, Activity activity, List<ImageModel> imageModelList) {
+    public MyAdapterNewFeedsNested(Context context, Activity activity, List<ChildLessonModel> childLessonModelList) {
         this.context = context;
-        this.newFeedModels = newFeedModels;
+
         this.activity = activity;
-        this.imageModelList = imageModelList;
+        this.childLessonModelList = childLessonModelList;
     }
+
 
     @NonNull
     @Override
@@ -42,30 +41,28 @@ public class MyAdapterNewFeedsNested extends RecyclerView.Adapter<MyAdapterNewFe
         LayoutInflater layoutInflater = LayoutInflater.from(context3);
         View view = layoutInflater.inflate(R.layout.nested_new_feed,parent,false);
         MyViewHolderNewFeedNested myViewHolderNewFeedNested = new MyViewHolderNewFeedNested(view);
-
-
         return myViewHolderNewFeedNested;
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolderNewFeedNested holder, int position) {
 
-   ImageModel imageModel = imageModelList.get(position);
 
-
+        Log.d("Size", ""+childLessonModelList.size());
+   ChildLessonModel childLessonModel = childLessonModelList.get(position);
+//
+//
            Glide
                    .with(activity)
-                   .load(imageModel.getImgResource())
+                   .load(childLessonModel.getImage_url())
                    .centerCrop()
                    .placeholder(R.drawable.background)
                    .into(holder.imageView);
 
-           holder.imageView.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-                   Intent intent = new Intent(context, Logout.class);
-                   context.startActivity(intent);
-               }
+           holder.imageView.setOnClickListener(v -> {
+               Intent intent = new Intent(context, VideoView.class);
+               intent.putExtra("video_url",childLessonModel.getVideo_url());
+               context.startActivity(intent);
            });
 
 
@@ -74,8 +71,9 @@ public class MyAdapterNewFeedsNested extends RecyclerView.Adapter<MyAdapterNewFe
 
     @Override
     public int getItemCount() {
+        return childLessonModelList.size();
 
-        return  imageModelList.size() ;
+//        return  childLessonModelList.size() ;
     }
 
     class MyViewHolderNewFeedNested extends RecyclerView.ViewHolder{

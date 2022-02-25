@@ -4,32 +4,51 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/circular_background.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/gradient_1.xml" value="0.290625" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/gradient_2.xml" value="0.290625" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/gradient_3.xml" value="0.290625" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/gradient_list.xml" value="0.290625" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_applogo.xml" value="0.20989583333333334" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_article.xml" value="0.275" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_follow.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_forward.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_fullscreen.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_google.xml" value="0.290625" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_pause.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_play.xml" value="0.23748723186925433" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_replay.xml" value="0.2421875" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/ic_tips.xml" value="0.275" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/laravel.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/drawable/search.xml" value="0.290625" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_blog_view.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_courser_details.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_daily_blog.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_developer.xml" value="0.4" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_exo_player.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_first.xml" value="0.14420180722891565" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_fourth.xml" value="0.4" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
-        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_login_page.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_login_page.xml" value="0.2" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_logout.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_main2.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_new_feed_pager.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_new_pager.xml" value="0.20625" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_online_class.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_privacy.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_second.xml" value="0.17437722419928825" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_short_cut.xml" value="0.2484375" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_short_cut_images.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_solutions_pager.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_splash_screen.xml" value="0.1539855072463768" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_third.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_user_profile.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_video_view.xml" value="0.184375" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_website_main_page.xml" value="0.14855072463768115" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/activity_websites.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/child_list_item.xml" value="0.25625" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/custom_controller.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/custom_player_control.xml" value="0.17753623188405798" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/fragment_extra_info_pager.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/fragment_image.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/fragment_new_feed.xml" value="0.27447916666666666" />
@@ -39,11 +58,14 @@
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/horizontal_navigation_itmes.xml" value="0.4" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/html_itmes.xml" value="0.42596810933940776" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/intro_one.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/intro_three.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/intro_two.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/nested_new_feed.xml" value="0.4" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/new_feed_item.xml" value="0.5624195624195624" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/online_classes.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/online_classes_items.xml" value="0.27025641025641023" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/our_blog_items.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/parnet_list_item.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/post_items.xml" value="0.21770833333333334" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/short_cut_items.xml" value="0.1" />
         <entry key="..\:/Users/D E  L L/AndroidStudioProjects/OneTimeActivity/app/src/main/res/layout/shortcut_images_items.xml" value="0.1693840579710145" />

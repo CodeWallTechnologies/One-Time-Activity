@@ -78,9 +78,9 @@ public class OriginalWebsitesFragment extends Fragment {
 
     public void getData() {
 
-        ProgressDialog progressDialog = new ProgressDialog(view.getContext());
-        progressDialog.setCancelable(false);
-        progressDialog.show();
+//        ProgressDialog progressDialog = new ProgressDialog(view.getContext());
+//        progressDialog.setCancelable(false);
+//        progressDialog.show();
 
 
 
@@ -100,8 +100,8 @@ public class OriginalWebsitesFragment extends Fragment {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 if (response.isSuccessful() ) {
-                    progressDialog.dismiss();
-                    Toast.makeText(view.getContext(), "json data", Toast.LENGTH_SHORT).show();
+//                    progressDialog.dismiss();
+//                    Toast.makeText(view.getContext(), "json data", Toast.LENGTH_SHORT).show();
                     try {
                         JSONArray jsonArray = new JSONArray(response.body());
 
@@ -116,7 +116,7 @@ public class OriginalWebsitesFragment extends Fragment {
 
             @Override
             public void onFailure(Call<String> call, Throwable t) {
-                progressDialog.dismiss();
+//                progressDialog.dismiss();
                 // Toast.makeText(DailyBlogFragment.this, ""+t, Toast.LENGTH_SHORT).show();
             }
 

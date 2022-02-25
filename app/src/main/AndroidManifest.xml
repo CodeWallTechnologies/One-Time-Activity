@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.turorials.onetimeactivity">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -12,14 +14,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneTimeActivity">
         <activity
+            android:name=".CourseDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Developer"
+            android:exported="false" />
+        <activity
+            android:name=".VideoView"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
             android:name=".fragment.Online_Class_Fragment"
             android:exported="false" />
         <activity
             android:name=".fragment.ExtraInfoPagerFragment"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".fragment.BlogPagerFragment"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
@@ -54,9 +74,6 @@
             android:name=".fragment.CheatSheetFragment"
             android:exported="false" />
         <activity
-            android:name=".WatchLessonActivity"
-            android:exported="false" />
-        <activity
             android:name=".fragment.CodeWallLessonsPageFragment"
             android:exported="false" />
         <activity
@@ -72,6 +89,9 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8399535558389132~7547768632"/>
     </application>
 
 </manifest>

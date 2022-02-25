@@ -11,14 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.turorials.onetimeactivity.MyAdapterOurBlogs;
+import com.turorials.onetimeactivity.adapters.MyAdapterOurBlogs;
 import com.turorials.onetimeactivity.R;
-import com.turorials.onetimeactivity.adapters.MyAdapterDailyBlogs;
-import com.turorials.onetimeactivity.adapters.MyAdapterOnlineClasses;
-import com.turorials.onetimeactivity.interfaces.ApiInterface;
-import com.turorials.onetimeactivity.interfaces.ApiSecondInterface;
 import com.turorials.onetimeactivity.interfaces.ApiThirdInterface;
-import com.turorials.onetimeactivity.model.DailyBlogsModel;
 import com.turorials.onetimeactivity.model.OurBlogsModel;
 
 import org.json.JSONArray;
@@ -79,10 +74,7 @@ public class OurBlogFragment extends Fragment {
 
     public void getData() {
 
-        ProgressDialog progressDialog = new ProgressDialog(view.getContext());
-        progressDialog.setMessage("Please wait..");
-        progressDialog.setCancelable(false);
-        progressDialog.show();
+
 
 
 
@@ -102,8 +94,6 @@ public class OurBlogFragment extends Fragment {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 if (response.isSuccessful() ) {
-                    progressDialog.dismiss();
-                    Toast.makeText(view.getContext(), "json data", Toast.LENGTH_SHORT).show();
                     try {
                         JSONArray jsonArray = new JSONArray(response.body());
 
@@ -114,12 +104,9 @@ public class OurBlogFragment extends Fragment {
                 }
             }
 
-            //http://codewalltechnologies.com/
-
             @Override
             public void onFailure(Call<String> call, Throwable t) {
-                progressDialog.dismiss();
-                // Toast.makeText(DailyBlogFragment.this, ""+t, Toast.LENGTH_SHORT).show();
+
             }
 
         });

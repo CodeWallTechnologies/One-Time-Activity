@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Developer">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        >
+
+        <LinearLayout
+            android:background="@color/main_color1"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/circleImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/myselfie"
+                app:civ_border_color="#3F51B5"
+                app:civ_border_width="2dp"
+                />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_dev_name"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Thura Linn"
+                 />
+            <TextView
+                android:textColor="#D8FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_dev_email"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thuralinn45512@gmail.com"
+                />
+
+
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:textColor="#B3FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                app:trimLength="100"
+                android:textAlignment="inherit"
+                app:trimExpandedText="Show more"
+                app:trimCollapsedText="...Show less"
+                app:colorClickableText="#3F51B5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_dev_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/dev_follow"
+                    android:text="Follow"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#2196F3"
+                    android:textAllCaps="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/dev_message"
+                    android:text="Message"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#32FFFFFF"
+                    android:textAllCaps="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

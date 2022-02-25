@@ -13,16 +13,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.turorials.onetimeactivity.R;
+import com.turorials.onetimeactivity.model.ChildLessonModel;
 import com.turorials.onetimeactivity.model.NewFeedModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class MyAdapterNewFeeds extends RecyclerView.Adapter<MyAdapterNewFeeds.MyViewHolderNewFeed> {
 
     Context context;
     MyAdapterNewFeedsNested myAdapterNewFeedsNested;
-    ArrayList<NewFeedModel> newFeedModels;
+    List<NewFeedModel> newFeedModels;
     Activity activity;
 
     NewFeedModel obj;
@@ -32,7 +34,7 @@ public class MyAdapterNewFeeds extends RecyclerView.Adapter<MyAdapterNewFeeds.My
 
 
 
-    public MyAdapterNewFeeds(Context context, ArrayList<NewFeedModel> newFeedModels, Activity activity) {
+    public MyAdapterNewFeeds(Context context, List<NewFeedModel> newFeedModels, Activity activity) {
         this.context = context;
         this.newFeedModels = newFeedModels;
         this.activity = activity;
@@ -59,7 +61,8 @@ public class MyAdapterNewFeeds extends RecyclerView.Adapter<MyAdapterNewFeeds.My
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context, RecyclerView.HORIZONTAL, true);
         holder.recyclerView.setLayoutManager(linearLayoutManager);
-        myAdapterNewFeedsNested = new MyAdapterNewFeedsNested(context,newFeedModels,activity,newFeedModels.get(position).getList());
+        myAdapterNewFeedsNested = new MyAdapterNewFeedsNested(context,activity,newFeedModels.get(position).getList());
+ //       myAdapterNewFeedsNested = new MyAdapterNewFeedsNested(context,activity,list);
         holder.recyclerView.setAdapter(myAdapterNewFeedsNested);
         holder.recyclerView.setHasFixedSize(true);
 

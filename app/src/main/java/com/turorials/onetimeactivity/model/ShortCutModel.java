@@ -5,9 +5,8 @@ import java.util.List;
 
 public class ShortCutModel {
     String title;
-    int imgResource;
-     ArrayList<Images> images;
-     int img[];
+    String image_url;
+    List<ChildImagesModel> childImagesModelList;
 
 
     public String getTitle() {
@@ -18,27 +17,19 @@ public class ShortCutModel {
         this.title = title;
     }
 
-    public int getImgResource() {
-        return imgResource;
+    public String getImage_url() {
+        return image_url;
     }
 
-    public void setImgResource(int imgResource) {
-        this.imgResource = imgResource;
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
     }
 
-    public ArrayList<Images> getImages() {
-        return images;
+    public List<ChildImagesModel> getChildImagesModelList() {
+        return childImagesModelList;
     }
 
-    public void setImages(ArrayList<Images> images) {
-        this.images = images;
-    }
-
-    public int[] getImg() {
-        return img;
-    }
-
-    public void setImg(int[] img) {
-        this.img = img;
+    public void setChildImagesModelList(List<ChildImagesModel> childImagesModelList) {
+        this.childImagesModelList = childImagesModelList;
     }
 }

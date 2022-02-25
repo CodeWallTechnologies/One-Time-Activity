@@ -4,11 +4,16 @@ import java.util.List;
 
 public class NewFeedModel {
    String name;
-   List<ImageModel> list;
+   List<ChildLessonModel> list;
 
 
-   public NewFeedModel(String name, List<ImageModel> list) {
+
+
+   public void setName(String name) {
       this.name = name;
+   }
+
+   public void setList(List<ChildLessonModel> list) {
       this.list = list;
    }
 
@@ -16,7 +21,7 @@ public class NewFeedModel {
       return name;
    }
 
-   public List<ImageModel> getList() {
+   public List<ChildLessonModel> getList() {
       return list;
    }
 }
